@@ -1,0 +1,226 @@
+<!-- Google Font for festive headings -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+  /* Body and general styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #001f3f; /* Night sky for snow */
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    color: darkred;
+    text-shadow: 2px 2px green;
+    font-family: 'Pacifico', cursive;
+    margin-top: 40px;
+    transition: all 0.3s;
+    cursor: default;
+  }
+
+  h1:hover {
+    text-shadow: 2px 2px green, 0 0 10px yellow, 0 0 20px lightgreen;
+    transform: scale(1.05);
+  }
+
+  /* Tables */
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  th, td {
+    border: 2px solid #cc0000;
+    padding: 10px;
+    text-align: left;
+    transition: all 0.3s;
+  }
+
+  th {
+    background-color: #ffe6e6;
+    color: darkred;
+  }
+
+  tr:hover td {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    text-shadow: 0 0 5px yellow, 0 0 10px lightgreen;
+    transform: scale(1.02);
+  }
+
+  /* Candy-cane letters */
+  .candy span:nth-child(even) { color: red; }
+  .candy span:nth-child(odd) { color: green; }
+
+  /* Falling snow */
+  .snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 9999;
+    user-select: none;
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    animation-name: fall;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+  }
+
+  /* Festive button */
+  a {
+    display: inline-block;
+    font-size: 18px;
+    color: darkred;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: lightyellow;
+    margin: 20px auto;
+    text-align: center;
+    transition: all 0.3s;
+  }
+
+  a:hover {
+    background-color: yellow;
+    color: darkgreen;
+    box-shadow: 0 0 10px yellow, 0 0 20px lightgreen;
+    transform: scale(1.05);
+  }
+</style>
+
+<!-- Christmas Songs Section -->
+<h1>🎄 Top Christmas Songs 🎄</h1>
+<table>
+  <tr>
+    <th>Song</th>
+    <th>Streams</th>
+  </tr>
+  <tr>
+    <td class="candy">All I Want for Christmas Is You – Mariah Carey</td>
+    <td class="candy">~2.3 billion</td>
+  </tr>
+  <tr>
+    <td class="candy">Last Christmas – Wham!</td>
+    <td class="candy">~1.8 billion</td>
+  </tr>
+  <tr>
+    <td class="candy">Santa Tell Me – Ariana Grande</td>
+    <td class="candy">~1.1 billion</td>
+  </tr>
+  <tr>
+    <td class="candy">Rockin’ Around the Christmas Tree – Brenda Lee</td>
+    <td class="candy">~1.2 billion</td>
+  </tr>
+</table>
+
+<!-- Christmas Movies Section -->
+<h1>🎬 Top Christmas Movies 🎬</h1>
+<table>
+  <tr>
+    <th>Movie</th>
+    <th>Box Office / Earnings</th>
+  </tr>
+  <tr>
+    <td class="candy">Home Alone (1990)</td>
+    <td class="candy">~$476M</td>
+  </tr>
+  <tr>
+    <td class="candy">Elf (2003)</td>
+    <td class="candy">~$220M</td>
+  </tr>
+  <tr>
+    <td class="candy">The Polar Express (2004)</td>
+    <td class="candy">~$187M</td>
+  </tr>
+  <tr>
+    <td class="candy">How the Grinch Stole Christmas (2000)</td>
+    <td class="candy">~$345M</td>
+  </tr>
+  <tr>
+    <td class="candy">A Christmas Story (1983)</td>
+    <td class="candy">~$70M</td>
+  </tr>
+</table>
+
+<!-- Most Used Christmas Emojis Section -->
+<h1>😃 Most Used Christmas Emojis 🎄</h1>
+<table>
+  <tr>
+    <th>Emoji</th>
+    <th>Meaning</th>
+    <th>Times Used / Views</th>
+  </tr>
+  <tr>
+    <td class="candy">🎅</td>
+    <td class="candy">Santa Claus</td>
+    <td class="candy">~1.2 billion</td>
+  </tr>
+  <tr>
+    <td class="candy">🎄</td>
+    <td class="candy">Christmas Tree</td>
+    <td class="candy">~980 million</td>
+  </tr>
+  <tr>
+    <td class="candy">❄️</td>
+    <td class="candy">Snowflake</td>
+    <td class="candy">~850 million</td>
+  </tr>
+  <tr>
+    <td class="candy">🎁</td>
+    <td class="candy">Gift</td>
+    <td class="candy">~720 million</td>
+  </tr>
+  <tr>
+    <td class="candy">🕯️</td>
+    <td class="candy">Candle</td>
+    <td class="candy">~600 million</td>
+  </tr>
+</table>
+
+<!-- Link Button -->
+<div style="text-align:center;">
+  <a href="https://www.google.com/search?q=christmas+songs+list+site" target="_blank">
+    🎵 See More Christmas Songs
+  </a>
+</div>
+
+<script>
+  // Candy-cane letters for table cells
+  document.querySelectorAll('.candy').forEach(cell => {
+    const text = cell.textContent;
+    cell.textContent = '';
+    [...text].forEach((ch, i) => {
+      const span = document.createElement('span');
+      span.textContent = ch;
+      span.style.color = i % 2 === 0 ? 'red' : 'green';
+      cell.appendChild(span);
+    });
+  });
+
+  // Animated falling snow
+  const snowCount = 50;
+  for (let i = 0; i < snowCount; i++) {
+    const snow = document.createElement('div');
+    snow.className = 'snowflake';
+    snow.style.left = Math.random() * window.innerWidth + 'px';
+    snow.style.fontSize = (Math.random() * 24 + 12) + 'px';
+    snow.style.animationDuration = (Math.random() * 5 + 5) + 's';
+    snow.textContent = '❄️';
+    document.body.appendChild(snow);
+  }
+</script>
